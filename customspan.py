@@ -6,7 +6,7 @@ from azure.monitor.opentelemetry.exporter import AzureMonitorTraceExporter
 from opentelemetry.instrumentation.flask import FlaskInstrumentor  
   
 # REPLACE with your real Azure Application Insights CONNECTION STRING!  
-CONNECTION_STRING = "YOUR-CONNECTION-STRING"  
+CONNECTION_STRING = "InstrumentationKey=f4e4cda2-0b5b-43a8-b108-4f5b64ea0845;IngestionEndpoint=https://australiaeast-1.in.applicationinsights.azure.com/;LiveEndpoint=https://australiaeast.livediagnostics.monitor.azure.com/;ApplicationId=f3203ea2-b532-4b13-a72c-ba5afb4f3fd8"  
   
 trace.set_tracer_provider(TracerProvider())  
 tracer = trace.get_tracer(__name__)  
